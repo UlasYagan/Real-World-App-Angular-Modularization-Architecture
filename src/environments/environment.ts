@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  BASE_URL: "https://localhost:5001/api/",
+  toastr: {
+    timeOut: 3000,
+    positionClass: 'toast-top-right',
+    preventDuplicates: true,
+    closeButton: true,
+  },
 };
 
 /*
