@@ -10,6 +10,7 @@ export const environment = {
     positionClass: 'toast-top-right',
     preventDuplicates: true,
     closeButton: true,
+    
   },
 };
 

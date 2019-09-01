@@ -3,8 +3,8 @@ import { Routes, RouterModule } from "@angular/router";
 import { MainComponent } from './layouts/main/main.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { AdvertisementComponent } from './modules/advertisement/components/advertisement/advertisement.component';
-import { AdminHomeComponent } from './modules/admin/components/admin-home/admin-home.component';
 import { PageNotFoundComponent } from './modules/core/page-not-found/page-not-found.component';
+import { DashboardComponent } from './modules/admin/components/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: "admin",
     component: AdminComponent,
-    children: [{ path: "", component: AdminHomeComponent }]
+    children: [{ path: "", component: DashboardComponent }]
   },
 
   { path: "", redirectTo: "/", pathMatch: "full" },

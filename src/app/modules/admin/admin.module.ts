@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AdminHomeComponent],
+  declarations: [DashboardComponent],
   imports: [
     CommonModule
   ]
