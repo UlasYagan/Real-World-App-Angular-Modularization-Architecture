@@ -3,7 +3,6 @@ import { Routes, RouterModule } from "@angular/router";
 import { MainComponent } from "./layouts/main/main.component";
 import { AdminComponent } from "./layouts/admin/admin.component";
 import { AdvertisementComponent } from "./modules/advertisement/components/advertisement/advertisement.component";
-import { PageNotFoundComponent } from "./modules/core/page-not-found/page-not-found.component";
 import { DashboardComponent } from "./modules/admin/components/dashboard/dashboard.component";
 import { AdvertisementListComponent } from "./modules/advertisement/components/advertisement-list/advertisement-list.component";
 import { CompanyDetailComponent } from './modules/companies/components/company-detail/company-detail.component';
@@ -34,9 +33,8 @@ const routes: Routes = [
     component: AdminComponent,
     children: [{ path: "", component: DashboardComponent }]
   },
-
   { path: "", redirectTo: "/", pathMatch: "full" },
-  { path: "**", component: PageNotFoundComponent }
+  { path: "**", redirectTo: "/", pathMatch: "full"   }
 ];
 
 @NgModule({

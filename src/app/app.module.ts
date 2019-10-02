@@ -13,12 +13,16 @@ import { CoreModule } from './modules/core/core.module';
 import { AdminModule } from './modules/admin/admin.module';
 import { CompaniesModule } from './modules/companies/companies.module';
 import { MembersModule } from './modules/members/members.module';
+import { HeaderComponent } from './layouts/main/header/header.component';
+import { FooterComponent } from './layouts/main/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    MainComponent
+    MainComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
